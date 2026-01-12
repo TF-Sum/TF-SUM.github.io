@@ -52,9 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">TF-SUM: Training-free Video Summarization via Language-based
-              Hierarchical
-              Scoring</h1>
+            <h1 class="title is-1 publication-title">TF-SUM: Training-free Video Summarization via Language-centric Hierarchical Reasoning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -151,16 +149,7 @@
           <div class="content has-text-justified">
             <p>
 
-              TF-SUM is a novel training-free video summarization framework that utilizes the complementary strengths of
-              pre-trained Large Vision-Language Models (LVLMs) and Large Language Models (LLMs). Unlike traditional
-              approaches that require model training and manual annotations, TF-SUM operates entirely without
-              supervision. It begins by generating textual descriptions for each video frame using a vision-language
-              model and filters noisy captions via cross-modal similarity. Then, an LLM performs hierarchical importance
-              scoring to produce both frame-level and segment-level scores based on the cleaned text. Finally, visual
-              similarity is used to eliminate redundancy and refine the summary. This lightweight yet effective pipeline
-              enables TF-SUM to generalize across video domains without retraining. Experiments on TVSum and SumMe
-              demonstrate that TF-SUM achieves competitive or superior performance compared to state-of-the-art
-              unsupervised methods, while remaining fully training-free and annotation-free.
+              Conventional video summarization relies heavily on annotated datasets, limiting generalization. To address this, we propose TF-SUM, a training-free framework that harnesses the reasoning power of LVLMs and LLMs. Instead of task-specific training, TF-SUM generates frame-level descriptions via LVLMs and performs hierarchical importance inference purely in the language space. Extensive experiments on four benchmarks show that TF-SUM matches or outperforms state-of-the-art methods without using a single training sample.
 
             </p>
           </div>
